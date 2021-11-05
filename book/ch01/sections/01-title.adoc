@@ -1,5 +1,30 @@
-== 제1장 제목
+== 포인터와 배열
 
-내용
+[source,c++]
+----
+#include <iostream>
 
-image::./images/readme/ruby-setup-001.png[공식 ruby 홈페이지,width=500,align=center]
+int main()
+{
+    void* ptr = malloc(16);
+    if (ptr == NULL)
+        return 1;
+
+    int* ptrInt = (int*)ptr;
+    std::cout << "[1] = " << (int)ptr << std::endl;
+    std::cout << "[2] = " << (int)ptr + 4 << std::endl;
+    std::cout << "[3] = " << (int)ptrInt + 4 << std::endl;
+    std::cout << "[4] = " << (int)&ptrInt[1] << std::endl;
+
+    return 0;
+}
+----
+
+[source,console]
+----
+// 출력
+[1] = 17977776
+[2] = 17977780
+[3] = 17977780
+[4] = 17977780
+----
