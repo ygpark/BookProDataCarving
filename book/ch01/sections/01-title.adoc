@@ -1,0 +1,5 @@
+== 제1장 제목
+
+내용
+
+image::./images/readme/ruby-setup-001.png[공식 ruby 홈페이지,width=500,align=center]

@@ -1,0 +1,21 @@
+= BookTemplate
+박영기
+:doctype: book
+:docinfo:
+:toc:
+:toclevels: 2
+:pagenums:
+:front-cover-image: image:book/cover.png[width=1050,height=1600]
+:icons: font
+:source-highlighter: coderay
+
+
+== 코드
+
+[source,javascript]
+----
+func main()
+{
+	var kkk int;
+}
+----
