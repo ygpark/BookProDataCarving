@@ -7,7 +7,6 @@
 
 이 책은 ``asciidoc``으로 만들어졌습니다. 그래서 html이나 pdf형식으로 변환하려면 ``ruby``와 ``asciidoctor`` 그리고 ``make``가 필요합니다.
 
-``
 
 === ruby 설치하기
 
