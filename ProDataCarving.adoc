@@ -11,5 +11,6 @@ v1.0, 2021-11-05
 :toc-title: 차례
 //:front-cover-image: image:book/cover.png[width=1050,height=1600]
 
-include::book/ch01/sections/01-title.adoc[]
+include::book/ch01/sections/pointer.adoc[포인터]
+include::book/ch01/sections/pointer_and_type_casting.adoc[포인터와 타입 캐스팅]
 
