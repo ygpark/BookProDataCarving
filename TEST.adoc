@@ -19,3 +19,39 @@ func main()
 	var kkk int;
 }
 ----
+
+
+== 테이블
+
+.자료형
+[%header,cols="^,^,^"]
+|===
+|자료형                               |32bit OS | 64bit OS
+|char                                 | 1       | 1
+|short                                | 2       | 2
+|int                                  | 4       | 4
+|[.underline]#long#                   | [.underline]#4#     | [.underline]#8#
+|long long                            | 8       | 8
+|unsigned char                        | 1       | 1
+|unsigned short                       | 2       | 2
+|unsigned int                         | 4       | 4
+|[.underline]#unsigned long#          | [.underline]#4#     | [.underline]#8#
+|unsigned long long                   | 8       | 8
+|[.underline]#pointer (*)#            | [.underline]#4#     | [.underline]#8#
+|===
+
+== 경고
+
+NOTE: An admonition draws the reader's attention to auxiliary information.
+
+Here are the other built-in admonition types:
+
+IMPORTANT: Don't forget the children!
+
+TIP: Look for the warp zone under the bridge.
+
+CAUTION: Slippery when wet.
+
+WARNING: The software you're about to use is untested.
+
+IMPORTANT: Sign off before stepping away from your computer.
