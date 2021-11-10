@@ -1,6 +1,9 @@
 BOOKNAME=ProDataCarving
+CHROME="/c/Program Files/Google/Chrome/Application/chrome.exe"
+ACRORD="/c/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe"
+ROOT="/d/Repo/BookProDataCarving/"
 
-all: html pdf
+all: html run
 
 html:
 	asciidoctor $(BOOKNAME).adoc
@@ -13,6 +16,10 @@ test:
 
 readme:
 	asciidoctor README.adoc
+
+run:
+	-if [ -e $(ROOT)/$(BOOKNAME).html ] ; then $(CHROME) $(ROOT)/$(BOOKNAME).html ; fi
+	-if [ -e $(ROOT)/$(BOOKNAME).pdf ] ; then $(ACRORD) $(ROOT)/$(BOOKNAME).pdf ; fi
 
 clean:
 	rm -f $(BOOKNAME).pdf
