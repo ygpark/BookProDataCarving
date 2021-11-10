@@ -29,10 +29,9 @@
 ----
 struct AlignedStruct
 {
-    char a[8];    // 8 byte
-    int b;        // 4 byte 
-    int c;        //        + 4 byte = 8byte
-    long long d;  // 8 byte
+    char a[8];     // [a0][a1][a2][a3] [a4][a5][a6][a7]
+    int b; int c;  // [b3][b2][b1][b0] [c3][c2][c1][c0]
+    long long d;   // [d7][d6][d5][d4] [d3][d2][d1][d0]
 }; // 구조체 크기 = 24 byte
 ----
 
@@ -47,9 +46,9 @@ struct AlignedStruct
 ----
 struct UnalignedStruct
 {
-    char a[6];       // 6 + 슬랙 바이트 2 = 8 byte
-    int b;           // 4 + 슬랙 바이트 4 = 8 byte
-    long long c;     // 8 + 슬랙 바이트 0 = 8 byte
+    char a[6];       // [a0][a1][a2][a3] [a4][a5][--][--]
+    int b;           // [b3][b2][b1][b0] [--][--][--][--]
+    long long c;     // [c7][c6][c5][c4] [c3][c2][c1][c0]
 }; // 구조체 크기 = 24 byte
 ----
 
